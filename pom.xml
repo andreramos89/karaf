@@ -175,8 +175,8 @@
         <bouncycastle.version>1.69</bouncycastle.version>
         <camel.version>3.6.0</camel.version>
         <cglib.bundle.version>3.2.9_1</cglib.bundle.version>
-        <cxf.version>3.4.3</cxf.version>
-        <jackson.version>2.12.5</jackson.version>
+        <cxf.version>3.6.2</cxf.version>
+        <jackson.version>2.15.1</jackson.version>
         <jna.version>5.9.0</jna.version>
         <jaxb.version>2.3.3</jaxb.version>
         <commons-beanutils.version>1.9.4</commons-beanutils.version>
@@ -419,6 +419,12 @@
             <artifactId>snakeyaml</artifactId>
             <version>${snakeyaml.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-yaml</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
