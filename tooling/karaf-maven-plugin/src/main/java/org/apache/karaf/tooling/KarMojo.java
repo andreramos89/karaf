@@ -256,7 +256,7 @@ public class KarMojo extends MojoSupport {
         File archiveFile = getArchiveFile(outputDirectory, finalName, classifier);
 
         MavenArchiver archiver = new MavenArchiver();
-        archiver.setCreatedBy("Kar Maven Plugin", "org.apache.karaf.tooling", "karaf-maven-plugin");
+        archiver.setCreatedBy("Kar Maven Plugin", "org.hitachivantara.karaf.tooling", "karaf-maven-plugin");
         MavenArchiveConfiguration configuration = new MavenArchiveConfiguration();
         configuration.addManifestEntries(archive.getManifestEntries());
         archiver.setArchiver(jarArchiver);

@@ -28,8 +28,8 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <groupId>org.apache.karaf.instance</groupId>
-    <artifactId>org.apache.karaf.instance.core</artifactId>
+    <groupId>org.hitachivantara.karaf.instance</groupId>
+    <artifactId>org.hitachivantara.karaf.instance.core</artifactId>
     <packaging>bundle</packaging>
     <name>Apache Karaf :: Instance :: Core</name>
     <description>Core implementation of the instance feature to manipulate Karaf child instances.</description>
@@ -41,7 +41,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.apache.karaf</groupId>
+                <groupId>org.hitachivantara.karaf</groupId>
                 <artifactId>karaf-bom</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
@@ -89,7 +89,7 @@
 
         <dependency>
             <groupId>org.apache.karaf.profile</groupId>
-            <artifactId>org.apache.karaf.profile.core</artifactId>
+            <artifactId>org.hitachivantara.karaf.profile.core</artifactId>
             <optional>true</optional>
         </dependency>
 

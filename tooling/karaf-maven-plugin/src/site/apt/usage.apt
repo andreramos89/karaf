@@ -27,7 +27,7 @@ Packagings
 
 +---+
                 <plugin>
-                    <groupId>org.apache.karaf.tooling</groupId>
+                    <groupId>org.hitachivantara.karaf.tooling</groupId>
                     <artifactId>karaf-maven-plugin</artifactId>
                     <version>${karaf.version}</version>
                     <extensions>true</extensions>
@@ -50,7 +50,7 @@ Packagings
 +---+
                           <phases>
                               <compile>
-                                  org.apache.karaf.tooling:karaf-maven-plugin:generate-features-xml
+                                  org.hitachivantara.karaf.tooling:karaf-maven-plugin:generate-features-xml
                               </compile>
                               <install>
                                   org.apache.maven.plugins:maven-install-plugin:install
@@ -65,7 +65,7 @@ Packagings
 
 +---+
             <plugin>
-                <groupId>org.apache.karaf.tooling</groupId>
+                <groupId>org.hitachivantara.karaf.tooling</groupId>
                 <artifactId>karaf-maven-plugin</artifactId>
                 <configuration>
                     <startLevel>50</startLevel>
@@ -127,7 +127,7 @@ Packagings
                                 org.apache.karaf.tooling:karaf-maven-plugin:generate-features-xml
                             </compile>
                             <package>
-                                org.apache.karaf.tooling:karaf-maven-plugin:archive-kar
+                                org.hitachivantara.karaf.tooling:karaf-maven-plugin:archive-kar
                             </package>
                             <install>
                                 org.apache.maven.plugins:maven-install-plugin:install
@@ -158,12 +158,12 @@ Packagings
                         <phases>
                             <process-resources>
                                 org.apache.maven.plugins:maven-resources-plugin:resources,
-                                org.apache.karaf.tooling:karaf-maven-plugin:assembly
+                                org.hitachivantara.karaf.tooling:karaf-maven-plugin:assembly
                             </process-resources>
                             <compile>
                             </compile>
                             <package>
-                                org.apache.karaf.tooling:karaf-maven-plugin:archive-server
+                                org.hitachivantara.karaf.tooling:karaf-maven-plugin:archive-server
                             </package>
                             <install>
                                 org.apache.maven.plugins:maven-install-plugin:install
@@ -178,7 +178,7 @@ Packagings
 
 +---+
             <plugin>
-                <groupId>org.apache.karaf.tooling</groupId>
+                <groupId>org.hitachivantara.karaf.tooling</groupId>
                 <artifactId>karaf-maven-plugin</artifactId>
                 <configuration>
                     <defaultStartLevel>50</defaultStartLevel>

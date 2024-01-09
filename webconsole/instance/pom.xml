@@ -35,7 +35,7 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>org.apache.karaf</groupId>
+				<groupId>org.hitachivantara.karaf</groupId>
 				<artifactId>karaf-bom</artifactId>
 				<version>${project.version}</version>
 				<type>pom</type>
@@ -76,8 +76,8 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.karaf.instance</groupId>
-			<artifactId>org.apache.karaf.instance.core</artifactId>
+			<groupId>org.hitachivantara.karaf.instance</groupId>
+			<artifactId>org.hitachivantara.karaf.instance.core</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>

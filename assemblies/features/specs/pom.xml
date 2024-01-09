@@ -41,7 +41,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.apache.karaf</groupId>
+                <groupId>org.hitachivantara.karaf</groupId>
                 <artifactId>karaf-bom</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
@@ -57,6 +57,11 @@
             <artifactId>framework</artifactId>
             <type>kar</type>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>2.2</version>
         </dependency>
     </dependencies>
 
@@ -81,7 +86,7 @@
                 </executions>
             </plugin>
             <plugin>
-                <groupId>org.apache.karaf.tooling</groupId>
+                <groupId>org.hitachivantara.karaf.tooling</groupId>
                 <artifactId>karaf-maven-plugin</artifactId>
                 <executions>
                     <execution>
@@ -135,7 +140,7 @@
             <build>
                 <plugins>
                     <plugin>
-                        <groupId>org.apache.karaf.tooling</groupId>
+                        <groupId>org.hitachivantara.karaf.tooling</groupId>
                         <artifactId>karaf-maven-plugin</artifactId>
                         <executions>
                             <execution>

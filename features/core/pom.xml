@@ -40,7 +40,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.apache.karaf</groupId>
+                <groupId>org.hitachivantara.karaf</groupId>
                 <artifactId>karaf-bom</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
@@ -177,7 +177,7 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-	    <version>${jackson.version}</version>
+	      <version>${jackson.version}</version>
         </dependency>
     </dependencies>
 

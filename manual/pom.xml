@@ -21,6 +21,7 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
+	<groupId>org.hitachivantara.karaf</groupId>
 	<artifactId>manual</artifactId>
 	<name>Apache Karaf :: Manual</name>
 	<packaging>bundle</packaging>
@@ -38,7 +39,7 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.apache.karaf.tooling</groupId>
+				<groupId>org.hitachivantara.karaf.tooling</groupId>
 				<artifactId>karaf-maven-plugin</artifactId>
 				<version>${project.version}</version>
 				<executions>
@@ -113,8 +114,8 @@
 						<version>${project.version}</version>
 					</dependency>
 					<dependency>
-						<groupId>org.apache.karaf.instance</groupId>
-						<artifactId>org.apache.karaf.instance.core</artifactId>
+						<groupId>org.hitachivantara.karaf.instance</groupId>
+						<artifactId>org.hitachivantara.karaf.instance.core</artifactId>
 						<version>${project.version}</version>
 					</dependency>
 					<dependency>
@@ -169,7 +170,7 @@
 					</dependency>
 					<dependency>
 						<groupId>org.apache.karaf.profile</groupId>
-						<artifactId>org.apache.karaf.profile.core</artifactId>
+						<artifactId>org.hitachivantara.karaf.profile.core</artifactId>
 						<version>${project.version}</version>
 					</dependency>
 					<dependency>
