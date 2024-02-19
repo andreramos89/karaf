@@ -101,7 +101,7 @@
                 </dependency>
             </dependencies>
             <activation>
-                <jdk>[9,)</jdk>
+                <jdk>11</jdk>
             </activation>
         </profile>
     </profiles>

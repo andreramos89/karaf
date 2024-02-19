@@ -847,17 +847,6 @@
       </organization>
     </project>
   </supplement>
- <supplement>
-    <project>
-      <groupId>org.apache.geronimo.specs</groupId>
-      <artifactId>geronimo-stax-api_1.0_spec</artifactId>
-      <name>Apache Geronimo Specs :: Stax API 1.0</name> 
-      <organization>
-        <name>The Apache Software Foundation</name>
-        <url>http://www.apache.org/</url>
-      </organization>
-    </project>
-  </supplement>
   <supplement>
     <project>
       <groupId>org.jline</groupId>

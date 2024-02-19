@@ -19,7 +19,7 @@ package javax.xml.stream;
 import java.util.Iterator;
 import javax.xml.namespace.NamespaceContext;
 import javax.xml.namespace.QName;
-import javax.xml.stream.events.*;
+import javax.xml.stream.*;
 
 public abstract class XMLEventFactory {
 

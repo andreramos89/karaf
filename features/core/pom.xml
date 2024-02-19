@@ -179,6 +179,35 @@
             <artifactId>jackson-databind</artifactId>
 	      <version>${jackson.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.karaf</groupId>
+            <artifactId>org.apache.karaf.util</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.framework</artifactId>
+            <version>${org.osgi.framework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.resource</artifactId>
+            <version>${org.osgi.resource.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.service.component</artifactId>
+            <version>${org.osgi.service.component.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.util.promise</artifactId>
+            <version>${org.osgi.util.promise.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ops4j.pax.url</groupId>
+            <artifactId>pax-url-aether</artifactId>
+            <version>${pax.url.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -198,6 +227,20 @@
             </resource>
         </resources>
         <plugins>
+                <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <compilerArgs>
+                        <arg>--add-exports=org.ops4j.pax.url.mvn/org.ops4j.pax.url.mvn=ALL-UNNAMED</arg>
+                        <arg>--patch-module</arg>
+                        <arg>org.eclipse.equinox.region=${project.basedir}/features/core/src/main/java</arg>
+                    </compilerArgs>
+                    <source>11</source>
+                    <target>11</target>
+                    <maxmem>512M</maxmem>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.karaf.tooling</groupId>
                 <artifactId>karaf-services-maven-plugin</artifactId>
@@ -212,7 +255,8 @@
                             org.apache.karaf.features.management,
                             org.apache.karaf.features.management.codec;-noimport:=true,
                             org.osgi.service.repository,
-                            org.eclipse.equinox.region.*
+                            org.eclipse.equinox.region.*;-noimport:=true,
+                            java.nio.*
                         </Export-Package>
                         <Import-Package>
                             !org.eclipse.osgi.service.resolver,
@@ -239,11 +283,12 @@
                             org.apache.karaf.util.maven,
                             org.apache.karaf.util.xml,
                             org.eclipse.equinox.internal.region.*;-split-package:=merge-first,
-                            org.apache.felix.resolver.*,
+                            org.apache.felix.resolver.*;-split-package:=merge-first,
                             org.ops4j.pax.swissbox.*,
                             org.ops4j.util.*,
                             org.ops4j.lang.*,
-                            com.fasterxml.jackson*
+                            com.fasterxml.jackson*,
+                            org.ops4j.pax.url.mvn*
                         </Private-Package>
                         <Embed-Dependency>
                             org.apache.karaf.util;inline="org/apache/karaf/util/XmlUtils*.class"
@@ -258,7 +303,7 @@
 	        <id>java9-plus</id>
 	        <properties>
                 <plexus-utils.version>3.4.2</plexus-utils.version>
-                <mvn.opts>--add-exports=java.base/sun.net.www.protocol.file=ALL-UNNAMED --add-exports=java.base/sun.net.www.protocol.ftp=ALL-UNNAMED --add-exports=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-exports=java.base/sun.net.www.protocol.https=ALL-UNNAMED --add-exports=java.base/sun.net.www.content.text=ALL-UNNAMED --add-exports=jdk.xml.dom/org.w3c.dom.html=ALL-UNNAMED -Djava.io.tmpdir=${project.build.directory}</mvn.opts>
+                <mvn.opts>--add-exports=java.base/java.nio.file=ALL-UNNAMED --add-exports=java.base/sun.net.www.protocol.file=ALL-UNNAMED --add-exports=java.base/sun.net.www.protocol.ftp=ALL-UNNAMED --add-exports=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-exports=java.base/sun.net.www.protocol.https=ALL-UNNAMED --add-exports=java.base/sun.net.www.content.text=ALL-UNNAMED --add-exports=jdk.xml.dom/org.w3c.dom.html=ALL-UNNAMED -Djava.io.tmpdir=${project.build.directory}</mvn.opts>
 	        </properties>
                 <dependencies>
                     <dependency>
@@ -268,7 +313,7 @@
                     </dependency>
                 </dependencies>
 	        <activation>
-        	    <jdk>[9,)</jdk>
+        	    <jdk>11</jdk>
             </activation>
 	</profile>
     </profiles>

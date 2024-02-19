@@ -214,6 +214,28 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <compilerArgs>
+                        <arg>--add-exports=java.nio/java.nio.file=ALL-UNNAMED</arg>
+                        <arg>--add-exports=org.apache.felix.resolver/resolver-=ALL-UNNAMED</arg>
+                        <arg>--add-exports=java.xml/javax.xml.bind-=ALL-UNNAMED</arg>
+                        <arg>--add-exports=java.xml/javax.xml.parsers=ALL-UNNAMED</arg>
+                        <arg>--add-exports=java.xml/javax.xml.stream=ALL-UNNAMED</arg>
+                        <arg>--add-exports=java.xml/javax.xml.namespace=ALL-UNNAMED</arg>
+                        <arg>--add-exports=java.xml/javax.xml.stream.events=ALL-UNNAMED</arg>
+                        <arg>--add-exports=java.xml/javax.xml.transform.stream=ALL-UNNAMED</arg>
+                        <arg>--add-exports=java.xml/javax.xml.bind.annotation=ALL-UNNAMED</arg>
+                        <arg>--add-exports=java.xml/org.xml.sax=ALL-UNNAMED</arg>
+                        <arg>--add-exports=org.slf4j/org.slf4j=ALL-UNNAMED</arg>
+                    </compilerArgs>
+                    <source>11</source>
+                    <target>11</target>
+                    <maxmem>256M</maxmem>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
                 <configuration>
                     <useDefaultDelimiters>false</useDefaultDelimiters>
