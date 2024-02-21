@@ -1012,6 +1012,24 @@
   <supplement>
     <project>
       <groupId>org.ops4j.pax.url</groupId>
+      <artifactId>pax-url-aether</artifactId>
+      <name>OPS4J Pax Url - mvn:</name>
+      <url>http://www.ops4j.org/projects/pax/url/pax-url-aether</url>
+      <organization>
+        <name>OPS4J - Open Participation Software for Java</name>
+        <url>http://www.ops4j.org/</url>
+      </organization>
+      <licenses>
+        <license>
+          <name>The Apache Software License, Version 2.0</name>
+          <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+      </licenses>
+    </project>
+  </supplement>
+  <supplement>
+    <project>
+      <groupId>org.ops4j.pax.url</groupId>
       <artifactId>pax-url-war</artifactId>
       <name>OPS4J Pax Url - war:</name>
       <url>http://www.ops4j.org/projects/pax/url/pax-url-war</url>
