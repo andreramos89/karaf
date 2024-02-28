@@ -24,7 +24,7 @@
     <parent>
         <groupId>org.apache.karaf.assemblies.features</groupId>
         <artifactId>features</artifactId>
-        <version>4.4.6-SNAPSHOT</version>
+        <version>4.4.5</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -43,7 +43,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.apache.karaf</groupId>
+                <groupId>org.hitachivantara.karaf</groupId>
                 <artifactId>karaf-bom</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
@@ -78,8 +78,8 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.apache.karaf.instance</groupId>
-            <artifactId>org.apache.karaf.instance.core</artifactId>
+            <groupId>org.hitachivantara.karaf.instance</groupId>
+            <artifactId>org.hitachivantara.karaf.instance.core</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -419,7 +419,7 @@
 
         <!-- manual -->
         <dependency>
-            <groupId>org.apache.karaf</groupId>
+            <groupId>org.hitachivantara.karaf</groupId>
             <artifactId>manual</artifactId>
             <scope>provided</scope>
             <optional>true</optional>
@@ -447,7 +447,7 @@
                 </executions>
             </plugin>
             <plugin>
-                <groupId>org.apache.karaf.tooling</groupId>
+                <groupId>org.hitachivantara.karaf.tooling</groupId>
                 <artifactId>karaf-maven-plugin</artifactId>
                 <configuration>
                     <startLevel>30</startLevel>
@@ -509,7 +509,7 @@
             <build>
                 <plugins>
                     <plugin>
-                        <groupId>org.apache.karaf.tooling</groupId>
+                        <groupId>org.hitachivantara.karaf.tooling</groupId>
                         <artifactId>karaf-maven-plugin</artifactId>
                         <executions>
                             <execution>

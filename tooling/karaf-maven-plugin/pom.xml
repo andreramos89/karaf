@@ -22,13 +22,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.apache.karaf.tooling</groupId>
+        <groupId>org.hitachivantara.karaf.tooling</groupId>
         <artifactId>tooling</artifactId>
-        <version>4.4.6-SNAPSHOT</version>
+        <version>4.4.5</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
+    <groupId>org.hitachivantara.karaf.tooling</groupId>
     <artifactId>karaf-maven-plugin</artifactId>
+    <version>4.4.5</version>
     <packaging>maven-plugin</packaging>
     <name>Apache Karaf :: Tooling :: Maven Karaf Plugin</name>
 
@@ -45,7 +47,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.apache.karaf</groupId>
+                <groupId>org.hitachivantara.karaf</groupId>
                 <artifactId>karaf-bom</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
@@ -188,7 +190,7 @@
         </dependency>
         <dependency>
             <groupId>org.apache.karaf.profile</groupId>
-            <artifactId>org.apache.karaf.profile.core</artifactId>
+            <artifactId>org.hitachivantara.karaf.profile.core</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.felix</groupId>

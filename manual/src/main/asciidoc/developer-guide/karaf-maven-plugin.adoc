@@ -31,7 +31,7 @@ The most generally useful features of the karaf-maven-plugin are exposed as pack
         <pluginManagement>
             <plugins>
                 <plugin>
-                    <groupId>org.apache.karaf.tooling</groupId>
+                    <groupId>org.hitachivantara.karaf.tooling</groupId>
                     <artifactId>karaf-maven-plugin</artifactId>
                     <version>${project.version}</version>
                     <extensions>true</extensions>
@@ -40,7 +40,7 @@ The most generally useful features of the karaf-maven-plugin are exposed as pack
         </pluginManagement>
         <plugins>
             <plugin>
-                <groupId>org.apache.karaf.tooling</groupId>
+                <groupId>org.hitachivantara.karaf.tooling</groupId>
                 <artifactId>karaf-maven-plugin</artifactId>
             </plugin>
         </plugins>
@@ -86,7 +86,7 @@ The example below generates help for the commands in the current project:
   <build>
     <plugins>
       <plugin>
-        <groupId>org.apache.karaf.tooling</groupId>
+        <groupId>org.hitachivantara.karaf.tooling</groupId>
         <artifactId>karaf-maven-plugin</artifactId>
         <version>${project.version}</version>
 

@@ -140,7 +140,7 @@ This is the minimal assembly pom changed to use the packaging and annotated
         <plugins>
             <!-- karaf-maven-plugin will call both assembly and archive goals -->
             <plugin>
-                <groupId>org.apache.karaf.tooling</groupId>
+                <groupId>org.hitachivantara.karaf.tooling</groupId>
                 <artifactId>karaf-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <configuration>
@@ -220,7 +220,7 @@ For instance, to pre-install Spring 4.0.7.RELEASE_1 feature in your custom distr
 
         <plugins>
             <plugin>
-                <groupId>org.apache.karaf.tooling</groupId>
+                <groupId>org.hitachivantara.karaf.tooling</groupId>
                 <artifactId>karaf-maven-plugin</artifactId>
                 <version>4.0.0</version>
                 <extensions>true</extensions>
@@ -308,7 +308,7 @@ For instance, the Maven POM could look like:
         </executions>
       </plugin>
       <plugin>
-        <groupId>org.apache.karaf.tooling</groupId>
+        <groupId>org.hitachivantara.karaf.tooling</groupId>
         <artifactId>karaf-maven-plugin</artifactId>
         <version>${karaf.version}</version>
         <executions>

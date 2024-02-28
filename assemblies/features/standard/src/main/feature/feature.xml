@@ -642,7 +642,7 @@ update = manager
     </feature>
 
     <feature name="instance" description="Provide Instance support" version="${project.version}">
-        <bundle start-level="30">mvn:org.apache.karaf.instance/org.apache.karaf.instance.core/${project.version}</bundle>
+        <bundle start-level="30">mvn:org.hitachivantara.karaf.instance/org.hitachivantara.karaf.instance.core/${project.version}</bundle>
     </feature>
 
     <feature name="jaas-deployer" description="Allow support of blueprint JAAS configuration in the deploy folder" version="${project.version}">
@@ -1529,7 +1529,7 @@ org.apache.felix.eventadmin.AddSubject=true
 
 profilesDirectory = ${karaf.home}/profiles
         </config>
-        <bundle>mvn:org.apache.karaf.profile/org.apache.karaf.profile.core/${project.version}</bundle>
+        <bundle>mvn:org.apache.karaf.profile/org.hitachivantara.karaf.profile.core/${project.version}</bundle>
         <bundle>mvn:org.apache.karaf.tooling/org.apache.karaf.tools.utils/${project.version}</bundle>
         <bundle>mvn:commons-io/commons-io/${commons-io.version}</bundle>
     </feature>
@@ -1676,7 +1676,8 @@ jul.layout.type = simple
 
     <feature name="documentation" description="Documentation of Karaf project in HTML" version="${project.version}">
         <feature>pax-web-war</feature>
-        <bundle>mvn:org.apache.karaf/manual/${project.version}</bundle>
+        <bundle>mvn:org.hitachivantara.karaf/manual/${project.version}</bundle>
+
     </feature>
 
     <feature name="standard" description="Wrap feature describing all features part of a standard distribution" version="${project.version}">

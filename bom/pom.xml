@@ -24,10 +24,11 @@
     <parent>
         <groupId>org.apache.karaf</groupId>
         <artifactId>karaf</artifactId>
-        <version>4.4.6-SNAPSHOT</version>
+        <version>4.4.5</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
+    <groupId>org.hitachivantara.karaf</groupId>
     <artifactId>karaf-bom</artifactId>
     <name>Apache Karaf :: BOM</name>
     <packaging>pom</packaging>
@@ -115,18 +116,18 @@
             </dependency>
 
             <dependency>
-                <groupId>org.apache.karaf</groupId>
+                <groupId>org.hitachivantara.karaf</groupId>
                 <artifactId>manual</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.karaf</groupId>
+                <groupId>org.hitachivantara.karaf</groupId>
                 <artifactId>manual</artifactId>
                 <type>pdf</type>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.karaf</groupId>
+                <groupId>org.hitachivantara.karaf</groupId>
                 <artifactId>manual</artifactId>
                 <type>html</type>
                 <version>${project.version}</version>
@@ -304,7 +305,7 @@
 
             <dependency>
                 <groupId>org.apache.karaf.profile</groupId>
-                <artifactId>org.apache.karaf.profile.core</artifactId>
+                <artifactId>org.hitachivantara.karaf.profile.core</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -320,8 +321,8 @@
             </dependency>
 
             <dependency>
-                <groupId>org.apache.karaf.instance</groupId>
-                <artifactId>org.apache.karaf.instance.core</artifactId>
+                <groupId>org.hitachivantara.karaf.instance</groupId>
+                <artifactId>org.hitachivantara.karaf.instance.core</artifactId>
                 <version>${project.version}</version>
             </dependency>
 

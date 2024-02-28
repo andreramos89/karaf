@@ -436,7 +436,7 @@
     </feature>
 
     <feature name="instance" description="Provide Instance support" version="${project.version}">
-        <bundle start-level="30" start="true">mvn:org.apache.karaf.instance/org.apache.karaf.instance.core/${project.version}</bundle>
+        <bundle start-level="30" start="true">mvn:org.hitachivantara.karaf.instance/org.hitachivantara.karaf.instance.core/${project.version}</bundle>
     </feature>
 
     <feature name="jaas" description="Provide JAAS support" version="${project.version}">
@@ -938,10 +938,10 @@
     </feature>
 
     <feature name="profile" description="Profiles support" version="${project.version}">
-        <config name="org.apache.karaf.profile">
+        <config name="org.hitachivantara.karaf.profile">
             profilesDirectory = ${karaf.home}/profiles
         </config>
-        <bundle>mvn:org.apache.karaf.profile/org.apache.karaf.profile.core/${project.version}</bundle>
+        <bundle>mvn:org.apache.karaf.profile/org.hitachivantara.karaf.profile.core/${project.version}</bundle>
         <bundle>mvn:org.apache.karaf.tooling/org.apache.karaf.tools.utils/${project.version}</bundle>
         <bundle>mvn:commons-io/commons-io/${commons-io.version}</bundle>
     </feature>
