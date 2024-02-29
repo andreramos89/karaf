@@ -47,6 +47,11 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>com.konloch</groupId>
+                <artifactId>safeyaml</artifactId>
+                <version>1.33.0</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

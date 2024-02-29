@@ -367,6 +367,30 @@
     </properties>
 
     <repositories>
+        <!--<repository>
+            <id>pentaho-public</id>
+            <name>Pentaho Public</name>
+            <url>https://repo.orl.eng.hitachivantara.com/artifactory/pnt-mvn/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>interval:15</updatePolicy>
+            </snapshots>
+        </repository>-->
+        <repository>
+            <id>PublicMaven</id>
+            <name>maven-public</name>
+            <url>https://repo1.maven.org/maven2/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
         <!-- Apache snapshots -->
         <repository>
             <id>apache-snapshots</id>
@@ -420,6 +444,13 @@
             <scope>test</scope>
             <version>${easymock.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.konloch/safeyaml -->
+        <dependency>
+            <groupId>com.konloch</groupId>
+            <artifactId>safeyaml</artifactId>
+            <version>1.33.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>
