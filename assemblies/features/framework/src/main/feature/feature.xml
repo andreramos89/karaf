@@ -23,7 +23,7 @@
 
     <feature version="${project.version}" description="Karaf core feature" name="framework" hidden="true">
         <!-- persistent wiring extension -->
-        <bundle start-level="1">mvn:org.apache.karaf.features/org.apache.karaf.features.extension/${project.version}</bundle>
+        <bundle start-level="1">mvn:org.hitachivantara.karaf.features/org.hitachivantara.karaf.features.extension/${project.version}</bundle>
         <!-- mvn: url handlers -->
         <bundle start-level="5">mvn:org.ops4j.pax.url/pax-url-aether/${pax.url.version}</bundle>
         <!-- logging -->
@@ -51,7 +51,7 @@
 
     <feature version="${project.version}" description="Karaf core feature" name="framework-logback" hidden="true">
         <!-- persistent wiring extension -->
-        <bundle start-level="1">mvn:org.apache.karaf.features/org.apache.karaf.features.extension/${project.version}</bundle>
+        <bundle start-level="1">mvn:org.hitachivantara.karaf.features/org.hitachivantara.karaf.features.extension/${project.version}</bundle>
         <!-- mvn: url handlers -->
         <bundle start-level="5">mvn:org.ops4j.pax.url/pax-url-aether/${pax.url.version}</bundle>
         <!-- logging -->

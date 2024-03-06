@@ -58,7 +58,7 @@
     </feature>
 
     <feature name="feature" description="Features Support" version="${project.version}">
-        <bundle start-level="1">mvn:org.apache.karaf.features/org.apache.karaf.features.extension/${project.version}</bundle>
+        <bundle start-level="1">mvn:org.hitachivantara.karaf.features/org.hitachivantara.karaf.features.extension/${project.version}</bundle>
         <bundle start-level="15">mvn:org.apache.karaf.features/org.apache.karaf.features.core/${project.version}</bundle>
         <config name="org.apache.karaf.features.repos">
 ################################################################################
